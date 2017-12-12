@@ -36,7 +36,8 @@ The statsd-injector is an optional job that supported that
 can be co-located with a process to support metrics using the statsd protocol.
 This component is maintained by the Loggregator team and uses the gRPC ingress
 point into Metron. Since this components is optionally colocated with the
-specific processes it does not have scaling considerations.  Doppler Forwarder
+specific processes it does not have scaling considerations.  
+## Doppler
 The doppler component acts as a highly-available routing mechanism for logs
 and metrics flowing through loggregator. Each envelop that ingresses into
 Doppler is duplicated, and routed to multiple destinations known as sinks. The
